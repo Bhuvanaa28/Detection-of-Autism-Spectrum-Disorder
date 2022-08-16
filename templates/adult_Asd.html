@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("static/p.jpg")
+}
+</style>
+</head>
+<body>
+
+<h1><center>ADULTS (AUTISM SPECTRUM DISORDER TEST)</center></h1>
+
+<form action="{{ url_for('result') }}" method="post">
+  <p>1. I often notice small sounds when others do not :</p>
+  <input type="radio" id="option1" name="opt1" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt1" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt1" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt1" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br>  
+
+  <p>2. I usually concentrate more on the whole picture, rather than the small details</p>
+  <input type="radio" id="option1" name="opt2" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt2" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt2" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt2" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br> 
+
+  <p>3. I find it easy to do more than one thing at once</p>
+  <input type="radio" id="option1" name="opt3" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt3" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt3" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt3" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br> 
+
+  <p>4. If there is an interruption, I can switch back to what I was doing very quickly</p>
+  <input type="radio" id="option1" name="opt4" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt4" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt4" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt4" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br> 
+
+  <p>5. I find it easy to ‘read between the lines’ when someone is talking to me</p>
+  <input type="radio" id="option1" name="opt5" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt5" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt5" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt5" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br>
+
+  <p>6. I know how to tell if someone listening to me is getting bored</p>
+  <input type="radio" id="option1" name="opt6" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt6" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt6" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt6" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br>
+
+  <p>7. When I’m reading a story I find it difficult to work out the characters’ intentions</p>
+  <input type="radio" id="option1" name="opt7" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt7" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt7" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt7" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br> 
+
+  <p>8. I like to collect information about categories of things (e.g. types of car, types of bird, types of train, types of plant etc)</p>
+  <input type="radio" id="option1" name="opt8" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt8" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt8" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt8" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br> 
+
+  <p>9. I find it easy to work out what someone is thinking or feeling just by looking at their face</p>
+  <input type="radio" id="option1" name="opt9" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt9" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt9" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt9" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br>
+
+  <p>10. I find it difficult to work out people’s intentions</p>
+  <input type="radio" id="option1" name="opt0" value="Definitely Agree">
+  <label for="Definitely Agree">Definitely Agree</label>
+  <input type="radio" id="option2" name="opt0" value="Slightly Agree">
+  <label for="Slightly Agree">Slightly Agree</label>
+  <input type="radio" id="option3" name="opt0" value="Slightly Disagree">
+  <label for="Slightly Disagree">Slightly Disagree</label>
+  <input type="radio" id="option4" name="opt0" value="Definitely Disagree">
+  <label for="Definitely Disagree">Definitely Disagree</label>
+
+  <br><br>
+  <center>
+  <input type="submit" value="Submit">
+  </center>
+<br><br>
+</form>
+
+</body>
+</html>

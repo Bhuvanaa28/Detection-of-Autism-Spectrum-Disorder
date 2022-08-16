@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-image: url("static/p.jpg")
+  }
+</style>
+</head>
+<body>
+
+<h1><center>TODDLERS 18 to 24 months(AUTISM SPECTRUM DISORDER TEST)</center></h1>
+
+<form action="{{ url_for('result') }}" method="post">
+  <p>1. Does your child look at you when you call his/her name?</p>
+  <input type="radio" id="option1" name="opt" value='opt1'>
+  <label for="Always">Always</label>
+  <input type="radio" id="option2" name="opt" value='opt1'>
+  <label for="Usually">Usually</label>
+  <input type="radio" id="option3" name="opt" value='opt1'>
+  <label for="Sometimes">Sometimes</label>
+  <input type="radio" id="option4" name="opt" value='opt1'>
+  <label for="Rarely">Rarely</label>
+  <input type="radio" id="option5" name="opt" value='opt1'>
+  <label for="Never">Never</label>
+
+  <br><br>  
+
+  <p>2. How easy is it for you to get eye contact with your child?</p>
+  <input type="radio" id="option1" name="opt1" value='opt2'>
+  <label for="Very_easy">Very easy</label>
+  <input type="radio" id="option2" name="opt1" value='opt2'>
+  <label for="Quite">Quite easy</label>
+  <input type="radio" id="option3" name="opt1" value='opt2'>
+  <label for="Quite_difficult">Quite difficult</label>
+  <input type="radio" id="option4" name="opt1" value='opt2'>
+  <label for="Very_difficult">Very difficult</label>
+  <input type="radio" id="option5" name="opt1" value='opt2'>
+  <label for="impossible">impossible</label>
+
+  <br><br> 
+
+  <p>3. Does your child point to indicate that she/he wants something?(e.g. a toy that is out of reach)</p>
+  <input type="radio" id="option1" name="opt2" value='opt3'>
+  <label for="Many_times_a_Day">Many times a Day</label>
+  <input type="radio" id="option2" name="opt2" value='opt3'>
+  <label for="few_times_a_Day">a few times a Day</label>
+  <input type="radio" id="option3" name="opt2" value='opt3'>
+  <label for="few_times_a_week">few times a week</label>
+  <input type="radio" id="option4" name="opt2" value='opt3'>
+  <label for="less_than_once_a_week">less than once a week</label>
+  <input type="radio" id="option5" name="opt2" value='opt3'>
+  <label for="Never">Never</label>
+
+  <br><br> 
+
+  <p>4. Does your child point to share interest with you?(e.g. pointing at an interesting sight)</p>
+  <input type="radio" id="option1" name="opt3" value='opt4'>
+  <label for="Many_times_a_Day">Many times a Day</label>
+  <input type="radio" id="option2" name="opt3" value='opt4'>
+  <label for="few_times_a_Day">a few times a Day</label>
+  <input type="radio" id="option3" name="opt3" value='opt4'>
+  <label for="few_times_a_week">few times a week</label>
+  <input type="radio" id="option4" name="opt3" value='opt4'>
+  <label for="less_than_once_a_week">less than once a week</label>
+  <input type="radio" id="option5" name="opt3" value='opt4'>
+  <label for="Never">Never</label>
+
+  <br><br> 
+
+  <p>5. Does your child pretend (e.g. care for dolls, talk on a toy phone)</p>
+  <input type="radio" id="option1" name="opt4" value='opt5'>
+  <label for="Many_times_a_Day">Many times a Day</label>
+  <input type="radio" id="option2" name="opt4" value='opt5'>
+  <label for="few_times_a_Day">a few times a Day</label>
+  <input type="radio" id="option3" name="opt4" value='opt5'>
+  <label for="few_times_a_week">few times a week</label>
+  <input type="radio" id="option4" name="opt4" value='opt5'>
+  <label for="less_than_once_a_week">less than once a week</label>
+  <input type="radio" id="option5" name="opt4" value='opt5'>
+  <label for="Never">Never</label>
+
+  <br><br>
+
+  <p>6. Does your child follow where you’re looking?</p>
+  <input type="radio" id="option1" name="opt5" value='opt6'>
+  <label for="Many_times_a_Day">Many times a Day</label>
+  <input type="radio" id="option2" name="opt5" value='opt6'>
+  <label for="few_times_a_Day">a few times a Day</label>
+  <input type="radio" id="option3" name="opt5" value='opt6'>
+  <label for="few_times_a_week">few times a week</label>
+  <input type="radio" id="option4" name="opt5" value='opt6'>
+  <label for="less_than_once_a_week">less than once a week</label>
+  <input type="radio" id="option5" name="opt5" value='opt6'>
+  <label for="Never">Never</label>
+
+  <br><br>
+
+  <p>7. If you or someone else in the family is visibly upset, does your child show signs of wanting to comfort them? (e.g. stroking hair, hugging them)</p>
+  <input type="radio" id="option1" name="opt6" value='opt7'>
+  <label for="Always">Always</label>
+  <input type="radio" id="option2" name="opt6" value='opt7'>
+  <label for="Usually">Usually</label>
+  <input type="radio" id="option3" name="opt6" value='opt7'>
+  <label for="Sometimes">Sometimes</label>
+  <input type="radio" id="option4" name="opt6" value='opt7'>
+  <label for="Rarely">Rarely</label>
+  <input type="radio" id="option5" name="opt6" value='opt7'>
+  <label for="Never">Never</label>
+
+  <br><br>  
+
+  <p>8. Would you describe your child’s first words as:</p>
+  <input type="radio" id="option1" name="opt7" value='opt8'>
+  <label for="Very_typical">Very_typical</label>
+  <input type="radio" id="option2" name="opt7" value='opt8'>
+  <label for="Quite_typical">Quite typical</label>
+  <input type="radio" id="option3" name="opt7" value='opt8'>
+  <label for="Slightly_unusual">Slightly unusual</label>
+  <input type="radio" id="option4" name="opt7" value='opt8'>
+  <label for="Very_unusual">Very unusual</label>
+   <input type="radio" id="option5" name="opt7" value='opt8'>
+  <label for="My_child_doesn’t_speak">My child doesn’t speak</label>
+
+  <br><br> 
+
+  <p>9. Does your child use simple gestures?(e.g. wave goodbye)</p>
+  <input type="radio" id="option1" name="opt8" value='opt9'>
+  <label for="Many_times_a_Day">Many times a Day</label>
+  <input type="radio" id="option2" name="opt8" value='opt9'>
+  <label for="few_times_a_Day">a few times a Day</label>
+  <input type="radio" id="option3" name="opt8" value='opt9'>
+  <label for="few_times_a_week">few times a week</label>
+  <input type="radio" id="option4" name="opt8" value='opt9'>
+  <label for="less_than_once_a_week">less than once a week</label>
+  <input type="radio" id="option5" name="opt8" value='opt9'>
+  <label for="Never">Never</label>
+
+  <br><br> 
+
+  <p>10. Does your child stare at nothing with no apparent purpose?</p>
+  <input type="radio" id="option1" name="opt9" value='opt0'>
+  <label for="Many_times_a_Day">Many times a Day</label>
+  <input type="radio" id="option2" name="opt9" value='opt0'>
+  <label for="few_times_a_Day">a few times a Day</label>
+  <input type="radio" id="option3" name="opt9" value='opt0'>
+  <label for="few_times_a_week">few times a week</label>
+  <input type="radio" id="option4" name="opt9" value='opt0'>
+  <label for="less_than_once_a_week">less than once a week</label>
+  <input type="radio" id="option5" name="opt9" value='opt0'>
+  <label for="Never">Never</label>
+
+  <br><br> 
+
+  <center>
+    <input type="submit" value="Submit">
+  </center>
+<br><br>
+</form>
+
+</body>
+</html>

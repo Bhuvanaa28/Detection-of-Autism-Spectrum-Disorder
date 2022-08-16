@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    body{
+         background-image: url("static/p1.jpg")
+      }
+  </style>
+</head>
+<body>
+  <p align="right">
+    <i>Please contact if you have any queries</i><br>
+    Phone no: 9950493835<br>
+    Email-Id:asds@gamil.com<br>
+
+  </p>  
+<center><h2>AUTISM SPECTRUM DISORDER DETECTION</h2></center>
+<h2><center>Please fill out the below form</center></h2>
+<div style="width:50%; margin-top:70px; margin-left:auto; margin-right:auto;">
+<form action="{{ url_for('test') }}" method="post">
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" ><br><br>
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="others">others</option>
+  </select><br><br>
+  <label for="ethnicity">Ethnicity:</label><br>
+  <input type="text" id="ethnicity" name="ethnicity" ><br><br>
+  <label for="jaundice">History of Jaundice:</label>
+  <select id="jaundice" name="jaundice">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+  </select><br><br>
+  <label for="country">Country:</label><br>
+  <input type="text" id="country" name="country" ><br><br>  
+  <label for="Family_mem_with_ASD">Family Member with ASD:</label>
+  <select id="Family_mem_with_ASD" name="Family_mem_with_ASD">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+  </select><br><br>
+  <label for="Who completed the test">Who completed the test:</label>
+  <select id="Who completed the test" name="Who completed the test">
+    <option value="Self">Self</option> 
+    <option value="Parent">Parent</option>    
+    <option value="Relative">Relative</option>
+    <option value="Health Care Professional">Health care professional</option>
+    <option value="other">Others</option>
+  </select><br><br>
+  <input type="submit" id="button" value="Submit" onclick="location.href='/form'">
+</form>
+</div>
+</body>
+</html>
